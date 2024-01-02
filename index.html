@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js" defer></script> -->
+    <script src="script1.js" defer></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" id="display" placeholder="0">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="clearAll();"  class="operator">
+                    <input type="button" value="DE" onclick="deleteValue();" class="operator">
+                    <input type="button" value="." onclick="" class="operator">
+                    <input type="button" value="/" onclick="operHand('/');" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="getValue('7');">
+                    <input type="button" value="8" onclick="getValue('8');">
+                    <input type="button" value="9" onclick="getValue('9');">
+                    <input type="button" value="*" onclick="operHand('*');" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="getValue('4');">
+                    <input type="button" value="5" onclick="getValue('5');">
+                    <input type="button" value="6" onclick="getValue('6');">
+                    <input type="button" value="-" onclick="operHand('-');" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="getValue('1');">
+                    <input type="button" value="2" onclick="getValue('2');">
+                    <input type="button" value="3" onclick="getValue('3');">
+                    <input type="button" value="+" onclick="operHand('+');" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="getValue('00');">
+                    <input type="button" value="0" onclick="getValue('0');">
+                    <input type="button" value="=" onclick="handleEqual();" class="equal">
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
